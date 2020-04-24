@@ -1,0 +1,118 @@
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+
+    background: #EEE;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+  color: #ADFCF9;
+  font-family: 'Lato';
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+a {
+  color: #ECBA82;
+}
+h1 {
+  font-family: 'Oswald';
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-family: "Roboto+Condensed";
+  font-size: 20px;
+  text-decoration: underline;
+}
+/* header--------------------------- */
+header {
+  background: #204E4A;
+  margin: 0px;
+}
+/* featured projects---------------- */
+.projects {
+  background: #297045;
+}
+/* work experience------------------ */
+.work {
+  background: #2E933C;
+}
+/* education------------------------ */
+.education {
+  background: #81C14B;
+}
+/* contact info--------------------- */
+footer {
+  background: #ECBA82;
+  color: #264653;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+
+}
+.contact-info a {
+  padding: 5px;
+  display: inline-block;
+  color: #073B3A;
+}
+/* Media----------------------------- */
+@media screen {
+  header h1{
+    text-align: right;
+    padding-bottom: 50px;
+  }
+
+  footer, h2, h2 + p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .project-item {
+    border-bottom: 1px dashed #ADFCF9;
+    padding: 25px 0;
+  }
+  .project-item:last-of-type {
+    border-bottom: none;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    border-bottom: 1px dashed #ADFCF9;
+    padding: 25px 0;
+  }
+  .job-item:last-of-type {
+    border-bottom: none;
+  }
+  .contact-info{
+    display: flex;
+    justify-content: center;
+  }
+}
