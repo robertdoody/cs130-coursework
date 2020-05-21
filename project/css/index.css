@@ -1,0 +1,42 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8EF9F3;
+  overflow-x: hidden ;
+  text-align: center;
+}
+
+header {
+  font-size: 2em;
+  font-family: Arial;
+  background-color: #5FA8D3;
+  width: 100vw;
+  height: 75px;
+  padding-top: 25px;
+}
+
+.dogs {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.dog {
+    width: 225px;
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 200px;
+}
+
+.dog:hover {
+  opacity: 80%;
+}

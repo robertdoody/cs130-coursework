@@ -1,0 +1,120 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8EF9F3;
+  text-align: center;
+}
+
+header {
+  font-size: 2em;
+  font-family: Arial;
+  background-color: #5FA8D3;
+  width: 100vw;
+  height: 75px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+a {
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+}
+
+a:hover{
+  color: gray;
+}
+
+header > div {
+  position: center;
+}
+
+.button {
+    background: rgba(255,255,255,0.2);
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    font-size: 2.5em;
+    color: white;
+    border-width: 0px;
+    padding-bottom: 5px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.next:hover, .prev:hover, {
+    background: rgba(255,255,255,0.4);
+}
+.prev {
+    top: 45vh;
+    left: 2vw;
+    background: #38369A;
+}
+.next {
+    top: 45vh;
+    right: 2vw;
+    background: #38369A;
+}
+
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 500ms ease-in;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #605BAE;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.indicator.current-slide {
+  background: #38369A;
+}
+
+.is-hidden {
+  display: none;
+}
