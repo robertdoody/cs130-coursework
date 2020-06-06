@@ -10,8 +10,9 @@ body {
 }
 
 header {
-  font-size: 2em;
-  font-family: Arial;
+  font-size: 3em;
+  font-family:'Amatic SC', cursive;
+  font-weight: bold;
   background-color: #5FA8D3;
   width: 100vw;
   height: 75px;
